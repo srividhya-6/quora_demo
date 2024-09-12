@@ -23,6 +23,9 @@ let posts=[
         content:"Iam from seoul national university"
     }
 ];
+app.get("/",(req,res)=>{
+    res.render("index.ejs",{posts});
+});
 app.get("/posts",(req,res)=>{
     res.render("index.ejs",{posts});
 });
